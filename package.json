@@ -1,6 +1,6 @@
 {
   "name": "mystore",
-  "homepage": "https://truejudgement.com/truejudgement",
+  "homepage": "https://truejudgement.com",
   "version": "1.0.0",
   "scripts": {
     "predeploy": "npm run build",
