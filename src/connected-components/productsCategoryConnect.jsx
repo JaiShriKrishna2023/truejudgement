@@ -6,9 +6,10 @@ import { useSelector } from "react-redux";
 
 const ProductsCategoryConnect=()=>{
 
-  const {selectedProduct} =useSelector(selectRightPanelProps);
+  const {selectedProduct, productOptions} =useSelector(selectRightPanelProps);
     const ProductsCategoryProps={
-        selectedProduct
+        selectedProduct,
+        productOptions
         
     }
 
