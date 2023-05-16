@@ -1,17 +1,20 @@
 {
+  "homepage":"https://truejudgement.com",
   "name": "mystore",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build:start": "cd dist && PORT=3000 npx serve",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -b main -d build",
     "start": "webpack serve --open --mode development",
     "start:live": "webpack serve --open --mode development --live-reload --hot"
   },
   "license": "MIT",
   "author": {
-    "name": "Jack Herrington",
-    "email": "jherr@pobox.com"
+    "name": "deepak",
+    "email": "iecdeepak2009@gmail.com"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
