@@ -12,7 +12,7 @@ const ViewRouterConnect=()=>{
 if(component){
     return component
 }
-return <div>sdsdfff</div>
+return <div></div>
 
 }
 export default compose(memo)(ViewRouterConnect);

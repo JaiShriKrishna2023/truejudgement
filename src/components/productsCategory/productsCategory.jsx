@@ -5,11 +5,13 @@ import Card from '../common-components/cards/cards';
 
 
 const ProductsCategory=(props)=>{
-    console.log('productsCategory', props?.selectedProduct);
+    console.log('productsCategory', props?.productOptions);
 
 return(
     <Fragment>
-<Card title={props?.selectedProduct} description={'soupy maggi'}/>
+        {props?.productOptions && props?.productOptions.map((description, index)=>
+        <Card key={index} title={description?.name} imgPath={description?.imagePath}/>)}
+
     </Fragment>
 )
 }
