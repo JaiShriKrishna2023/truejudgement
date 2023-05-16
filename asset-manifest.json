@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "//truejudgement/static/js/main.367de0d3.js",
-    "static/css/55.c1efb1fd.chunk.css": "//truejudgement/static/css/55.c1efb1fd.chunk.css",
-    "static/js/55.d2e5f04e.chunk.js": "//truejudgement/static/js/55.d2e5f04e.chunk.js",
-    "static/js/994.7d8d8286.chunk.js": "//truejudgement/static/js/994.7d8d8286.chunk.js",
-    "index.html": "//truejudgement/index.html",
-    "main.367de0d3.js.map": "//truejudgement/static/js/main.367de0d3.js.map",
-    "55.c1efb1fd.chunk.css.map": "//truejudgement/static/css/55.c1efb1fd.chunk.css.map",
-    "55.d2e5f04e.chunk.js.map": "//truejudgement/static/js/55.d2e5f04e.chunk.js.map",
-    "994.7d8d8286.chunk.js.map": "//truejudgement/static/js/994.7d8d8286.chunk.js.map"
+    "main.js": "/truejudgement/static/js/main.16037b3d.js",
+    "static/css/55.c1efb1fd.chunk.css": "/truejudgement/static/css/55.c1efb1fd.chunk.css",
+    "static/js/55.d2e5f04e.chunk.js": "/truejudgement/static/js/55.d2e5f04e.chunk.js",
+    "static/js/994.f7967acb.chunk.js": "/truejudgement/static/js/994.f7967acb.chunk.js",
+    "index.html": "/truejudgement/index.html",
+    "main.16037b3d.js.map": "/truejudgement/static/js/main.16037b3d.js.map",
+    "55.c1efb1fd.chunk.css.map": "/truejudgement/static/css/55.c1efb1fd.chunk.css.map",
+    "55.d2e5f04e.chunk.js.map": "/truejudgement/static/js/55.d2e5f04e.chunk.js.map",
+    "994.f7967acb.chunk.js.map": "/truejudgement/static/js/994.f7967acb.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.367de0d3.js"
+    "static/js/main.16037b3d.js"
   ]
 }
