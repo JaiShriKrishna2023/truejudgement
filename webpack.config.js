@@ -4,6 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
+    mode:'production',
     publicPath: "https://truejudgement.com",
   },
 
