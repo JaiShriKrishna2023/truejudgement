@@ -5,11 +5,10 @@ const CardWrapper = styled.div`
   justify-content: space-between;
 `;
 const CardContainer = styled.div`
-max-width: 100%;
-    height: auto;
-    background-color: rgba(204, 204, 204, 0.24);
-    border: 1px solid rgb(204, 204, 204);
-    min-width: 172px;
+max-width:100%;
+height:auto;
+background-color:rgb(204 204 204 / 24%);
+border:1px solid #ccc;
 
   `;
   const CardImg = styled.div`
@@ -21,12 +20,11 @@ max-width: 100%;
   background-position-x: center;
 `;
 const Title = styled.h2`
-  color: rgb(59 55 55 / 86%);
-  font-weight: normal;
-  font-size:100%;
+  color: #fff;
+  font-weight: 300;
 `
 const Description = styled.p`
-  color: rgb(59 55 55 / 86%);
+  color: #fff;
   font-weight: 300;
   `
 

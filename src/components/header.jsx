@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header=()=>{
 
-    return(<header>{'Anika Food Store'}</header>)
+    return(<header>Header</header>)
 
 }
 export default Header;

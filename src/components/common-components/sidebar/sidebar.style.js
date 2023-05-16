@@ -1,27 +1,26 @@
 import styled from 'styled-components';
 const SidebarWrapper=styled.div`
-eight: auto;
-    width: 20%;
+height: auto;
+    width:auto;
     background-color: rgb(255, 255, 255);
     z-index: 1;
     overflow: auto;
-    border: 1px solid rgb(204, 204, 204);
+    position: fixed !important;
+    border: 1px solid #ccc;
     top: 78px;
     left: 5px;
-    max-width: 100%;
-    position: fixed !important;
-    min-height: 645px;
+    max-width:100%;
 `
 const ItemContainer=styled.div`
 font-family: Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    
+    min-height: 704px;
     background-color: aliceblue;
     padding: 0px 3px 0px 3px;
 `;
 const ItemsList=styled.a`
-width: 100%;
+width: 92%;
     display: block;
     padding: 12px 0px 10px 15px;
     border: none;

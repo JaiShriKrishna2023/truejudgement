@@ -1,20 +1,19 @@
 {
-  "homepage":"https://truejudgement.com",
   "name": "mystore",
+  "homepage": "https://truejudgement.com/truejudgement",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --mode production",
-    "build:dev": "webpack --mode development",
-    "build:start": "cd dist && PORT=3000 npx serve",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -b main -d build",
-    "start": "webpack serve --open --mode development",
-    "start:live": "webpack serve --open --mode development --live-reload --hot"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "license": "MIT",
   "author": {
-    "name": "deepak",
-    "email": "iecdeepak2009@gmail.com"
+    "name": "Jack Herrington",
+    "email": "jherr@pobox.com"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -38,10 +37,23 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
+    "react-scripts": "^5.0.1",
     "redux": "^4.2.1",
     "redux-devtools-extension": "^2.13.9",
     "redux-saga": "^1.2.3",
     "reselect": "^4.1.8",
     "styled-components": "^5.3.10"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

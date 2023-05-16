@@ -6,13 +6,11 @@ export const selectRightPanelDomain=state=> state.rightPanelReducer || rightPane
 export const selectRightPanelProps=createSelector(
     selectRightPanelDomain,({
         productCategoryType,
-        selectedProduct,
-        productOptions
+        selectedProduct
 
     })=>({
         productCategoryType,
-        selectedProduct,
-        productOptions
+        selectedProduct
     })
 
 )

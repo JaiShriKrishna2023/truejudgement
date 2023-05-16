@@ -13,12 +13,7 @@ const SideBarConnect=(props)=>{
     const [activeItem, setActiveItem] = useState(0);
   const handleMenuSelection=(id, selectedItem)=>{
     setActiveItem(id);
-    dispatch(setSelectedProductTypeAction(
-        {
-        selectedItem:selectedItem,
-        productOptions:props?.sidebarData[id-1]?.productOptions
-        }
-        ));
+    dispatch(setSelectedProductTypeAction(selectedItem));
     dispatch(setViewScreenTypeAction(RIGHT_PANEL_VIEW_SCREENS.PRODUCT_CATEGORY_VIEW));
 
      }

@@ -2,8 +2,7 @@ import { SET_RIGHT_PANEL_SCREEN_TYPE, SET_SELECTED_PRODUCTS } from './rightPanel
 const rightPanelInitialState={
     previousRightPanelType:'',
     rightPanelType:'',
-    selectedProduct:'',
-    productOptions:{}
+    selectedProduct:''
 
 }
 const rightPanelReducer=(state=rightPanelInitialState, action)=>{
@@ -18,8 +17,7 @@ const rightPanelReducer=(state=rightPanelInitialState, action)=>{
             case SET_SELECTED_PRODUCTS:
                 return{
                     ...state,
-                    selectedProduct:action?.data?.selectedItem,
-                    productOptions:action?.data?.productOptions
+                    selectedProduct:action.data
                     
                 };
 
