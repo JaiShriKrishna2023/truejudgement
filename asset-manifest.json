@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/truejudgement/static/js/main.16037b3d.js",
-    "static/css/55.c1efb1fd.chunk.css": "/truejudgement/static/css/55.c1efb1fd.chunk.css",
-    "static/js/55.d2e5f04e.chunk.js": "/truejudgement/static/js/55.d2e5f04e.chunk.js",
-    "static/js/994.f7967acb.chunk.js": "/truejudgement/static/js/994.f7967acb.chunk.js",
-    "index.html": "/truejudgement/index.html",
-    "main.16037b3d.js.map": "/truejudgement/static/js/main.16037b3d.js.map",
-    "55.c1efb1fd.chunk.css.map": "/truejudgement/static/css/55.c1efb1fd.chunk.css.map",
-    "55.d2e5f04e.chunk.js.map": "/truejudgement/static/js/55.d2e5f04e.chunk.js.map",
-    "994.f7967acb.chunk.js.map": "/truejudgement/static/js/994.f7967acb.chunk.js.map"
+    "main.js": "/JaiShriKrishna2023/truejudgement/static/js/main.27676815.js",
+    "static/css/55.c1efb1fd.chunk.css": "/JaiShriKrishna2023/truejudgement/static/css/55.c1efb1fd.chunk.css",
+    "static/js/55.d2e5f04e.chunk.js": "/JaiShriKrishna2023/truejudgement/static/js/55.d2e5f04e.chunk.js",
+    "static/js/994.e68d82a3.chunk.js": "/JaiShriKrishna2023/truejudgement/static/js/994.e68d82a3.chunk.js",
+    "index.html": "/JaiShriKrishna2023/truejudgement/index.html",
+    "main.27676815.js.map": "/JaiShriKrishna2023/truejudgement/static/js/main.27676815.js.map",
+    "55.c1efb1fd.chunk.css.map": "/JaiShriKrishna2023/truejudgement/static/css/55.c1efb1fd.chunk.css.map",
+    "55.d2e5f04e.chunk.js.map": "/JaiShriKrishna2023/truejudgement/static/js/55.d2e5f04e.chunk.js.map",
+    "994.e68d82a3.chunk.js.map": "/JaiShriKrishna2023/truejudgement/static/js/994.e68d82a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.16037b3d.js"
+    "static/js/main.27676815.js"
   ]
 }
