@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/truejudgement.com/static/js/main.4279958b.js",
+    "static/css/55.c1efb1fd.chunk.css": "/truejudgement.com/static/css/55.c1efb1fd.chunk.css",
+    "static/js/55.d2e5f04e.chunk.js": "/truejudgement.com/static/js/55.d2e5f04e.chunk.js",
+    "static/js/994.c684f4f1.chunk.js": "/truejudgement.com/static/js/994.c684f4f1.chunk.js",
+    "index.html": "/truejudgement.com/index.html",
+    "main.4279958b.js.map": "/truejudgement.com/static/js/main.4279958b.js.map",
+    "55.c1efb1fd.chunk.css.map": "/truejudgement.com/static/css/55.c1efb1fd.chunk.css.map",
+    "55.d2e5f04e.chunk.js.map": "/truejudgement.com/static/js/55.d2e5f04e.chunk.js.map",
+    "994.c684f4f1.chunk.js.map": "/truejudgement.com/static/js/994.c684f4f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.4279958b.js"
+  ]
+}
