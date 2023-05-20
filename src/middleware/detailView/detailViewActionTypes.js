@@ -1,0 +1,12 @@
+
+export const SELECTED_ITEM_DETAIL='SELECTED_ITEM_DETAIL';
+export const DETAILED_VIEW='DETAILED_VIEW';
+export const SET_ITEM_DETAIL_DATA='SET_ITEM_DETAIL_DATA';
+
+
+
+
+
+
+
+

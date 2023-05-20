@@ -21,6 +21,36 @@ const GridContainer=styled.div`
   overflow: scroll;
   `;
 
+  const GlobalHeading=styled.div`
+  font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+  `;
+
+  const Image=styled.img`
+  width:100%;
+  vertical-align: middle;
+  border-style: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  background-image: url(${props => props.img});
+
+  `
+  const Description=styled.p`
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  `;
+
+  const ImageContainer=styled.img`
+  width: ${props => props.width};
+  height: ${props => props.height}
+  object-fit: none;
+  src: ${props => props.img};
+  `;
+
   
 
-  export {GridContainer, GridItem}
+  export {GridContainer, GridItem, GlobalHeading, Image, ImageContainer, Description}

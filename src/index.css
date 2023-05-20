@@ -1,12 +1,6 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-  font-size: 3rem;
-  margin: auto;
-  max-width: 800px;
-  margin-top: 20px;
+  margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 header{
@@ -30,6 +24,7 @@ footer{
     background-color: #0195ba;
     color: white;
     text-align: center;
+    font-size: 2rem;
   }
 
   
