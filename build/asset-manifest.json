@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/truejudgement.com/static/js/main.64a6ca92.js",
+    "main.js": "/truejudgement.com/static/js/main.047dc3c1.js",
     "static/css/881.6413ac5d.chunk.css": "/truejudgement.com/static/css/881.6413ac5d.chunk.css",
-    "static/js/881.5ba0392d.chunk.js": "/truejudgement.com/static/js/881.5ba0392d.chunk.js",
+    "static/js/881.0955a488.chunk.js": "/truejudgement.com/static/js/881.0955a488.chunk.js",
     "static/js/994.c684f4f1.chunk.js": "/truejudgement.com/static/js/994.c684f4f1.chunk.js",
     "index.html": "/truejudgement.com/index.html",
-    "main.64a6ca92.js.map": "/truejudgement.com/static/js/main.64a6ca92.js.map",
+    "main.047dc3c1.js.map": "/truejudgement.com/static/js/main.047dc3c1.js.map",
     "881.6413ac5d.chunk.css.map": "/truejudgement.com/static/css/881.6413ac5d.chunk.css.map",
-    "881.5ba0392d.chunk.js.map": "/truejudgement.com/static/js/881.5ba0392d.chunk.js.map",
+    "881.0955a488.chunk.js.map": "/truejudgement.com/static/js/881.0955a488.chunk.js.map",
     "994.c684f4f1.chunk.js.map": "/truejudgement.com/static/js/994.c684f4f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.64a6ca92.js"
+    "static/js/main.047dc3c1.js"
   ]
 }

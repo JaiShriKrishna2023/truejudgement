@@ -7,7 +7,7 @@ import { Description, Section, SectionTitle } from '../common-components/cards/c
 
 
 const DetailView=(props)=>{
-    console.log('DetailViewProps', props);
+
     
 
 return(

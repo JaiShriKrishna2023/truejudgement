@@ -7,7 +7,7 @@ export function* rightPanelProcessor(){
     try{
         const {isSuccess, data}=yield call(productCategoryTask);
         if(isSuccess){
-            console.log(data);
+            // console.log(data);
         }else{
             console.log('no data')
         }

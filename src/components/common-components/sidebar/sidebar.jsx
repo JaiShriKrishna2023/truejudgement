@@ -3,7 +3,6 @@ import{SidebarContainer, SidebarList, SidebarNav, SidebarListItem} from './sideb
 
 
 const Sidebar=(props)=>{
-    console.log('sidebar', props);
 
 return(
 <SidebarNav id={'sidebar'}>
