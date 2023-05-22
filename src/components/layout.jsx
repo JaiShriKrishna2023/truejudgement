@@ -6,12 +6,7 @@ import AppInitializationConnect from '../connected-components/appInitializationC
 
 const Layout=()=>{
     return(
-        <Fragment>
-<Header/>
-<AppInitializationConnect/>
-
-<Footer/>
-        </Fragment>
+      <AppInitializationConnect/>
   )
 
 }

@@ -6,14 +6,11 @@ import {Provider } from 'react-redux';
 import store from './middleware/store/store'
 
 const App = () => (
-  <div className="container">
    <Fragment>
-
      <Provider store={store} > 
-    <Layout>
-    </Layout>
+    <Layout/>
     </Provider>
    </Fragment>
-  </div>
+
 );
 ReactDOM.render(<App />, document.getElementById("app"));

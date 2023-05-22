@@ -4,19 +4,11 @@ import { GridContainer, GridItem } from '../globalStyle';
 import Viewrouterconnect from '../connected-components/viewrouterconnect';
 const RightPanelView = (props) => {
 
- 
-console.log('rightPanelView',props);
    
  return(
- <RightPanelContainer id={'rightpanel'}>
+ <RightPanelContainer id={'rightpanel'} className={'content'}>
    <PageTitle>{props?.selectedProduct}</PageTitle>
-  <GridContainer>
-  <GridItem>
- 
   <Viewrouterconnect/>
-  </GridItem>
-  
-    </GridContainer>
     </RightPanelContainer>)
 }
 export default RightPanelView;

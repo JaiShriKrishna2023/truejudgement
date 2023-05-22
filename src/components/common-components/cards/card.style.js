@@ -1,33 +1,41 @@
 import styled from 'styled-components';
-const CardWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`;
+
 const CardContainer = styled.div`
-max-width: 100%;
-    height: auto;
-    background-color: rgba(204, 204, 204, 0.24);
-    border: 1px solid rgb(204, 204, 204);
-    min-width: 172px;
+padding: 0 6px;
+float: left;
+width: 24.99999%;
+@media only screen and (max-width: 700px) {
+    width: 49.99999%;
+    margin: 6px 0;
+ 
+}
+@media only screen and (max-width: 500px) {
+    width: 100%;
+}
 
   `;
   const CardImg = styled.div`
-  background-image: url(${props => props.img});
-  width: 100%;
-  height: 100px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: center;
+  border: 1px solid #ccc;
+ 
 `;
-const Title = styled.h2`
-  color: rgb(59 55 55 / 86%);
-  font-weight: normal;
-  font-size:100%;
+const Title = styled.div`
+padding: 15px;
+text-align: center;
 `
-const Description = styled.p`
+const Description = styled.div`
+ padding: 15px;
+  text-align: center;
+  `
+
+  
+const Section = styled.section`
   color: rgb(59 55 55 / 86%);
   font-weight: 300;
   `
 
-export {Title, Description, CardContainer, CardWrapper, CardImg}
+  const SectionTitle = styled.b`
+  color: rgb(59 55 55 / 86%);
+  font-weight: 300;
+  `
+
+export {Title, Description, CardContainer, CardImg, Section, SectionTitle}

@@ -2,7 +2,7 @@ import React, {memo} from 'react';
 import {compose} from 'redux';
 import {useSelector} from 'react-redux';
 import {ViewRouteMapper} from '../components/ViewRouteMapper';
-import AppInitializationConnect from './appInitializationConnect';
+
 
 const ViewRouterConnect=()=>{
     const viewType=useSelector(

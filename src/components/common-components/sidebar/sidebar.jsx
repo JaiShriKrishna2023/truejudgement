@@ -1,12 +1,24 @@
 import React from 'react';
-import{SidebarWrapper} from './sidebar.style';
-import SidebarItems from './sidebarItem';
+import{SidebarContainer, SidebarList, SidebarNav, SidebarListItem} from './sidebar.style';
+
 
 const Sidebar=(props)=>{
     console.log('sidebar', props);
 
-return(<SidebarWrapper id={'sidebar'}>
-    <SidebarItems {...props}></SidebarItems>
-</SidebarWrapper>)
+return(
+<SidebarNav id={'sidebar'}>
+    {props?.sidebarData && props?.sidebarData.map((itemData, index) => <SidebarListItem  key={index}
+          onClick={() => props?.handleMenuSelection(itemData?.id, itemData?.productName)}
+          className={itemData.id === props?.activeItem ? "activeProduct" : ""}>
+              {itemData.productName}
+          </SidebarListItem>)}
+      
+  </SidebarNav>
+
+
+
+
+
+)
 }
 export default Sidebar;

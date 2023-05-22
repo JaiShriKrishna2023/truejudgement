@@ -14,10 +14,10 @@ export const ViewRouteMapper=[
         id:VIEW_ROUTE_SCREENS.RIGHT_PANEL_VIEW,
         component:(<RightPanelConnect/>)
     },
-    // {
-    //     id:RIGHT_PANEL_VIEW_SCREENS.PRODUCT_CATEGORY_VIEW,
-    //     component:(<ProductsCategoryConnect/>)
-    // },
+    {
+        id:RIGHT_PANEL_VIEW_SCREENS.PRODUCT_CATEGORY_VIEW,
+        component:(<ProductsCategoryConnect/>)
+    },
     {
         id:RIGHT_PANEL_VIEW_SCREENS.DETAIL_PANEL_VIEW,
         component:(<DetailViewConnect/>)

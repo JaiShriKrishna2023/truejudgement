@@ -1,14 +1,28 @@
-import React from 'react'
-import {Title, Description, CardContainer, CardImg} from './card.style';
+import React, { Fragment } from 'react'
+import {Title, CardContainer, CardImg} from './card.style';
+import { ClearFix, Acnhor, Image } from '../../../globalStyle';
 const Card = (props) => {
   console.log(props)
-  const imgPath='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFSQVX8vJ1-SJzkr_JPqNPjKQhs67nnQK10A&usqp=CAU';
- return(<CardContainer id={'cardContainer'}>
-  <CardImg id={'cardImage'} img={props?.imgPath}/>
-    <Title title={'cardTitle'}>{props?.title}</Title>
-    <Description description={'cardDescription'}>
-    {props?.description}
-    </Description>
-  </CardContainer>)
+  
+ return(
+ <Fragment>
+ <CardContainer id={'cardContainer'}>
+ <CardImg id={'cardImage'}>
+ <Acnhor>
+    <Image src={props?.imgPath}/>
+    </Acnhor> 
+  </CardImg>
+
+<Title>
+    {props?.title}
+    </Title> 
+  </CardContainer>
+<ClearFix></ClearFix>
+</Fragment>
+
+  
+
+  
+  )
 }
 export default Card;

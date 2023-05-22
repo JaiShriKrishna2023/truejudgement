@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+const Row=styled.div`
+&.row::after{
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+`;
+
+
 const GridContainer=styled.div` 
     display: grid;
     grid-template-columns: auto auto auto;
@@ -28,14 +39,14 @@ const GridContainer=styled.div`
   `;
 
   const Image=styled.img`
-  width:100%;
-  vertical-align: middle;
-  border-style: none;
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  background-image: url(${props => props.img});
-
+  width: 100%;
+  height: auto;
   `
+
+const Acnhor=styled.a`
+
+`;
+
   const Description=styled.p`
   display: block;
   margin-block-start: 1em;
@@ -51,6 +62,25 @@ const GridContainer=styled.div`
   src: ${props => props.img};
   `;
 
+  const size = {
+    mobileS: '320px',
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopL: '1440px',
+    desktop: '2560px'
+  }
+
+const ClearFix=styled.div`{
+ :after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}`;
+
   
 
-  export {GridContainer, GridItem, GlobalHeading, Image, ImageContainer, Description}
+  export {Row,Acnhor, GridContainer, GridItem, GlobalHeading, Image, ImageContainer, Description, ClearFix}
