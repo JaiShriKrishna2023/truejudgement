@@ -1,5 +1,5 @@
 {
-  "homepage": "truejudgement.in",
+  "homepage": "http://truejudgement.in/truejudgement",
   "name": "mystore",
   "version": "1.0.0",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -d build"
   },
   "license": "MIT",
   "author": {
@@ -23,6 +23,7 @@
     "autoprefixer": "^10.1.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.3.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.3.2",
     "postcss": "^8.2.1",
     "postcss-loader": "^4.1.0",
@@ -34,7 +35,6 @@
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "axios": "^1.4.0",
-    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
