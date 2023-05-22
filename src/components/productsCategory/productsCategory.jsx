@@ -5,7 +5,7 @@ import Card from '../common-components/cards/cards';
 
 
 const ProductsCategory=(props)=>{
-    // console.log('productsCategory', props?.productOptions);
+    console.log('productsCategory', props?.productOptions);
 
 return(
     <Fragment>

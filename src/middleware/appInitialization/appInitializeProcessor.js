@@ -8,7 +8,7 @@ export function* appInitializeProcessor(){
     try{
         const {isSuccess, data}=yield call(appInitializeTask);
         if(isSuccess){
-            // console.log('processor',data);
+            console.log('processor',data);
             yield put(setAppDataActionTypeAction(data));
             return;
             

@@ -7,7 +7,7 @@ export function* detailViewTask(){
     const serviceUrl='https://api.mocki.io/v2/c99bba7e/itemDetails';
 
     const response =yield call(getService, serviceUrl);
-    // console.log('response',  response);
+    console.log('response',  response);
     if(response){
         const {isSuccess, data, error}=yield call(detailViewTransformer, response);
 

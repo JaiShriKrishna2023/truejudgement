@@ -2,7 +2,7 @@ export function* appInitializeTransformer(apiResponse){
     let data={};
     let error={};
     let isSuccess=false;
-    // console.log('transformer::', apiResponse);
+    console.log('transformer::', apiResponse);
 
     if(apiResponse?.status===200){
         isSuccess=true;
@@ -11,6 +11,6 @@ export function* appInitializeTransformer(apiResponse){
         isSuccess=false;
         error=apiResponse?.error
     }
-    // console.log('data::', data);
+    console.log('data::', data);
     return {data, error, isSuccess};
 }

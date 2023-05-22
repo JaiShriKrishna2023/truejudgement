@@ -6,7 +6,7 @@ import SidebarConnect from '../connected-components/sidebarConnect';
 
 const Container=(props)=>{
 
-//  console.log('container', props);
+ console.log('container', props);
 
     return(
      <Fragment>

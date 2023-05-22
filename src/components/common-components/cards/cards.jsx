@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import {Title, CardContainer, CardImg} from './card.style';
 import { ClearFix, Acnhor, Image } from '../../../globalStyle';
 const Card = (props) => {
-  // console.log(props)
+  console.log(props)
   
  return(
  <Fragment>

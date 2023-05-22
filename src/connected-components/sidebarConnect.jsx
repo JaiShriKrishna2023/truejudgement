@@ -7,7 +7,7 @@ import { setSelectedProductTypeAction } from "../middleware/rightPanel/rightPane
 
 
 const SideBarConnect=(props)=>{
-    // console.log('sidebarConnect', props);
+    console.log('sidebarConnect', props);
     const dispatch=useDispatch();
 
     const [activeItem, setActiveItem] = useState(0);

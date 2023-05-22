@@ -8,7 +8,7 @@ import axios from 'axios';
 //   });
 
   export async function getService(serviceUrl) {
-    // console.log('serviceUrl', serviceUrl);
+    console.log('serviceUrl', serviceUrl);
     const response = await axios.get(serviceUrl);
     return response;
   }
