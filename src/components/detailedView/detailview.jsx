@@ -13,24 +13,31 @@ const DetailView=(props)=>{
 return(
     <Fragment>
         <DetailViewContainer id={'detail-view'}>
-          <GlobalHeading/>
-          <ImageContainer width={'672px'} height={'300px'} src={props?.productOptions[0].imagePath
-}>
-         
-          </ImageContainer>
-          
+         <GlobalHeading>{props?.selectedName}</GlobalHeading>
+           {props?.productOptions.map((item)=>
+           item?.name===props?.selectedName ?
+           <Fragment>
+            <ImageContainer width={'100%'} height={'auto'} src={item?.imagePath
+          }/>
+          <Section>
+            {item?.description} </Section>
+            </Fragment>
+
+          :''
+          )}
+
         </DetailViewContainer>
 
 <DetailViewContainer>
 
     
-        {console.log(props?.itemDetails[props?.selectedItem])}
+        {/* {console.log(props?.itemDetails[props?.selectedItem])}
         {props?.itemDetails[props?.selectedItem].map((item, index)=>item?.steps.map((item, index)=>
         <Section>
             <SectionTitle>Step{item?.id}:{item?.step}</SectionTitle>
             {item?.description} </Section>
       
-        ))}
+        ))}  */}
    
 </DetailViewContainer>
 

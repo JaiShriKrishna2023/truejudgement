@@ -7,15 +7,14 @@ import { selectRightPanelProps } from "../middleware/rightPanel/rightPanelSelect
 
 
 const DetailViewConnect=()=>{
+console.log('detail view connect');
+
+  const {productOptions} =useSelector(selectRightPanelProps);
 
 
-  const { selectedProduct, productOptions} =useSelector(selectRightPanelProps);
-
-
-  const {itemDetails } =useSelector(selectDetailViewProps);
+  const {selectedName } =useSelector(selectDetailViewProps);
     const DetailItemProps={
-        selectedItem:selectedProduct,
-        itemDetails,
+        selectedName,
         productOptions
         
        }

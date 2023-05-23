@@ -3,7 +3,7 @@ import { detailViewTask } from '../detailView/detailViewTask';
 import { detailViewProcessor } from '../detailView/detailViewProcessor';
 
 
-export function* productCategoryProcessor(){
+export function* productCategoryProcessor(selectedName){
 
     // console.log('productCategoryProcessor');
 
@@ -11,7 +11,7 @@ export function* productCategoryProcessor(){
         const {isSuccess, data}=yield call(detailViewTask);
         if(isSuccess){
             // console.log('detail view api',data);
-            
+            data.selectedName=selectedName;
     yield call(detailViewProcessor, data);
   
             return;

@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/truejudgement/static/js/main.eb112e24.js",
-    "static/css/881.6413ac5d.chunk.css": "/truejudgement/static/css/881.6413ac5d.chunk.css",
-    "static/js/881.5ba0392d.chunk.js": "/truejudgement/static/js/881.5ba0392d.chunk.js",
+    "main.js": "/truejudgement/static/js/main.6270e758.js",
+    "static/css/772.86be33cf.chunk.css": "/truejudgement/static/css/772.86be33cf.chunk.css",
+    "static/js/772.93fab446.chunk.js": "/truejudgement/static/js/772.93fab446.chunk.js",
     "static/js/994.5d27a004.chunk.js": "/truejudgement/static/js/994.5d27a004.chunk.js",
     "index.html": "/truejudgement/index.html",
-    "main.eb112e24.js.map": "/truejudgement/static/js/main.eb112e24.js.map",
-    "881.6413ac5d.chunk.css.map": "/truejudgement/static/css/881.6413ac5d.chunk.css.map",
-    "881.5ba0392d.chunk.js.map": "/truejudgement/static/js/881.5ba0392d.chunk.js.map",
+    "main.6270e758.js.map": "/truejudgement/static/js/main.6270e758.js.map",
+    "772.86be33cf.chunk.css.map": "/truejudgement/static/css/772.86be33cf.chunk.css.map",
+    "772.93fab446.chunk.js.map": "/truejudgement/static/js/772.93fab446.chunk.js.map",
     "994.5d27a004.chunk.js.map": "/truejudgement/static/js/994.5d27a004.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.eb112e24.js"
+    "static/js/main.6270e758.js"
   ]
 }

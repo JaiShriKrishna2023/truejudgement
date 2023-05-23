@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const CardContainer = styled.div`
 padding: 0 6px;
 float: left;
-width: 24.99999%;
+width: auto;
 @media only screen and (max-width: 700px) {
     width: 49.99999%;
     margin: 6px 0;
@@ -31,6 +31,8 @@ const Description = styled.div`
 const Section = styled.section`
   color: rgb(59 55 55 / 86%);
   font-weight: 300;
+  font-size: 150%;
+    margin-top: 15px;
   `
 
   const SectionTitle = styled.b`
@@ -38,4 +40,10 @@ const Section = styled.section`
   font-weight: 300;
   `
 
-export {Title, Description, CardContainer, CardImg, Section, SectionTitle}
+  const CardWrapper = styled.div`
+  display:flex;
+  flex-flow: row wrap;
+  `;
+
+
+export {Title, Description, CardContainer, CardImg, Section, SectionTitle, CardWrapper}

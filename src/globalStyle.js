@@ -33,14 +33,19 @@ const GridContainer=styled.div`
   `;
 
   const GlobalHeading=styled.div`
-  font-family: "Segoe UI",Arial,sans-serif;
-    font-weight: 400;
-    margin: 10px 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0px;
+  text-align: center;
+  font-weight: bold;
+  color: #672;
+  font-size: 2rem;
   `;
 
   const Image=styled.img`
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  width:auto;
+  height:130px;
   `
 
 const Acnhor=styled.a`

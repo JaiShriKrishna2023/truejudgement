@@ -5,11 +5,11 @@ export const detailViewPanelDomain=state=> state.detailViewReducer || detailView
 
 export const selectDetailViewProps=createSelector(
     detailViewPanelDomain,({
-        selectedItem,
+        selectedName,
         itemDetails
 
     })=>({
-        selectedItem,
+        selectedName,
         itemDetails
     })
 

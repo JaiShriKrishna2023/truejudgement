@@ -6,7 +6,7 @@ const Card = (props) => {
   
  return(
  <Fragment>
- <CardContainer id={'cardContainer'}>
+  <CardContainer id={'cardContainer'} onClick={()=>props.initiateDetailView(props?.title)}>
  <CardImg id={'cardImage'}>
  <Acnhor>
     <Image src={props?.imgPath}/>
@@ -17,6 +17,7 @@ const Card = (props) => {
     {props?.title}
     </Title> 
   </CardContainer>
+ 
 <ClearFix></ClearFix>
 </Fragment>
 

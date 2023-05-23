@@ -2,7 +2,8 @@ import {SELECTED_ITEM_DETAIL, SET_ITEM_DETAIL_DATA} from './detailViewActionType
 const detailViewInitialState={
    
     selectedItem:'',
-    itemDetails:''
+    selectedName:''
+    
 
 }
 const detailViewReducer=(state=detailViewInitialState, action)=>{
@@ -16,9 +17,7 @@ const detailViewReducer=(state=detailViewInitialState, action)=>{
                 case SET_ITEM_DETAIL_DATA:
                     return{
                         ...state,
-                        itemDetails:action.data,
-                        
-                        
+                        selectedName:action.data?.selectedName?.data,
                     };
             
             default:{
