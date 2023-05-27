@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/truejudgement/static/js/main.1bedde15.js",
+    "static/css/456.47de2ed1.chunk.css": "/truejudgement/static/css/456.47de2ed1.chunk.css",
+    "static/js/456.7a969f89.chunk.js": "/truejudgement/static/js/456.7a969f89.chunk.js",
+    "static/js/994.5d27a004.chunk.js": "/truejudgement/static/js/994.5d27a004.chunk.js",
+    "index.html": "/truejudgement/index.html",
+    "main.1bedde15.js.map": "/truejudgement/static/js/main.1bedde15.js.map",
+    "456.47de2ed1.chunk.css.map": "/truejudgement/static/css/456.47de2ed1.chunk.css.map",
+    "456.7a969f89.chunk.js.map": "/truejudgement/static/js/456.7a969f89.chunk.js.map",
+    "994.5d27a004.chunk.js.map": "/truejudgement/static/js/994.5d27a004.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.1bedde15.js"
+  ]
+}
