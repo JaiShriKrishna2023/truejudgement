@@ -31,7 +31,7 @@ const Description = styled.div`
 const Section = styled.section`
   color: rgb(59 55 55 / 86%);
   font-weight: 300;
-  font-size: 150%;
+  font-size: 100%;
     margin-top: 15px;
   `
 

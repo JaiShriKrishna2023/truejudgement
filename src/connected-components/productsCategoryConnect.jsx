@@ -14,8 +14,7 @@ const ProductsCategoryConnect=()=>{
   const initiateDetailView=(selectedName)=>{
     console.log(selectedName);
     dispatch(initiateProductCategoryProcessor(selectedName));
-   
-    // dispatch(setRightPanelScreenTypeAction(RIGHT_PANEL_VIEW_SCREENS.DETAIL_PANEL_VIEW));
+ 
 
   }
 

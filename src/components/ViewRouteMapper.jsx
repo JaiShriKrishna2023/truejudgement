@@ -4,6 +4,7 @@ import {VIEW_ROUTE_SCREENS, RIGHT_PANEL_VIEW_SCREENS} from '../constants/constan
 import RightPanelConnect from '../connected-components/rightpanelconnect';
 import ProductsCategoryConnect from '../connected-components/productsCategoryConnect';
 import DetailViewConnect from '../connected-components/detailViewConnect';
+import ShoppingViewConnect from '../connected-components/shoppingViewConnect';
 
 export const ViewRouteMapper=[
     {
@@ -22,6 +23,12 @@ export const ViewRouteMapper=[
         id:RIGHT_PANEL_VIEW_SCREENS.DETAIL_PANEL_VIEW,
         component:(<DetailViewConnect/>)
     },
+    {
+        id:RIGHT_PANEL_VIEW_SCREENS.SHOPPING_VIEW,
+        component:(<ShoppingViewConnect/>)
+    }
+
+    
 
     
 
