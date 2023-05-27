@@ -10,7 +10,7 @@ const ProductsCategory=(props)=>{
 
 return( <CardWrapper>
         {props?.productOptions && props?.productOptions.map((description, index)=>
-        <Card key={index} title={description?.name} imgPath={description?.imagePath} initiateDetailView={props?.initiateDetailView}/>)}
+        <Card clasName={'dfbhjsdbf'} key={index} title={description?.name} imgPath={description?.imagePath} initiateDetailView={props?.initiateDetailView}/>)}
 </CardWrapper>
   
 )

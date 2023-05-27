@@ -4,9 +4,13 @@ import Header from './header';
 import Footer from './footer';
 import AppInitializationConnect from '../connected-components/appInitializationConnect';
 
+const data=[1, 2,3 ,4];
 const Layout=()=>{
+
+
     return(
-      <AppInitializationConnect/>
+    
+      <AppInitializationConnect apiData={data} companyName={'lowes'}/>
   )
 
 }

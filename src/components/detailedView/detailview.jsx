@@ -2,6 +2,8 @@ import React, { Fragment, useState } from 'react';
 import { GlobalHeading, Image, ImageContainer } from '../../globalStyle';
 import { DetailViewContainer } from './detailView.style';
 import { Description, Section, SectionTitle } from '../common-components/cards/card.style';
+import TransformText from '../common-components/TransformText/transformText';
+import JsInterview from '../interviews/jsInterview';
 
 
 
@@ -17,10 +19,12 @@ return(
            {props?.productOptions.map((item)=>
            item?.name===props?.selectedName ?
            <Fragment>
-            <ImageContainer width={'100%'} height={'auto'} src={item?.imagePath
+            <ImageContainer width={'50%'} height={'auto'} src={item?.imagePath
           }/>
-          <Section>
-            {item?.description} </Section>
+        
+       
+          {item?.description && (item?.description ==='JS' || item?.description==='ReactJS') ? <JsInterview jsData={item}/>:<Section>
+            {item?.description} </Section>}
             </Fragment>
 
           :''
