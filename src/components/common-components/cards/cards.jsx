@@ -1,12 +1,15 @@
 import React, { Fragment } from 'react'
 import {Title, CardContainer, CardImg} from './card.style';
 import { ClearFix, Acnhor, Image } from '../../../globalStyle';
+
+
+
 const Card = (props) => {
   console.log(props)
   
  return(
  <Fragment>
-  <CardContainer id={'cardContainer'} onClick={()=>props.initiateDetailView(props?.title)}>
+  <CardContainer id={'cardContainer'} onClick={()=>props?.onClick()}>
  <CardImg id={'cardImage'}>
  <Acnhor>
     <Image src={props?.imgPath}/>

@@ -16,14 +16,14 @@ const DetailView=(props)=>{
 return(
     <Fragment>
         <DetailViewContainer id={'detail-view'}>
-         <GlobalHeading>{props?.selectedName}</GlobalHeading>
+        
            {props?.productOptions.map((item)=>
-           item?.name===props?.selectedName ?
            <Fragment>
+             <GlobalHeading>{item?.name}</GlobalHeading>
             <ImageContainer width={'100%'} height={'auto'} src={item?.imagePath
           }/>
         
-       {console.log(descriptionType?.item?.description)}
+      
 
           {item?.description &&
            (item?.description ==='JS' ||
@@ -32,22 +32,13 @@ return(
             {item?.description} </Section>}
             </Fragment>
 
-          :''
+    
           )}
 
         </DetailViewContainer>
 
 <DetailViewContainer>
 
-    
-        {/* {console.log(props?.itemDetails[props?.selectedItem])}
-        {props?.itemDetails[props?.selectedItem].map((item, index)=>item?.steps.map((item, index)=>
-        <Section>
-            <SectionTitle>Step{item?.id}:{item?.step}</SectionTitle>
-            {item?.description} </Section>
-      
-        ))}  */}
-   
 </DetailViewContainer>
 
     </Fragment>

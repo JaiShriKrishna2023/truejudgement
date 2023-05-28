@@ -1,0 +1,13 @@
+
+export const GET_PRODUCTS_DATA='GET_PRODUCTS_DATA';
+export const SET_PRODUCTS_DETAIL='SET_PRODUCTS_DETAIL';
+
+
+
+
+
+
+
+
+
+
