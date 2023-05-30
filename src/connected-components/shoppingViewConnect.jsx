@@ -1,8 +1,9 @@
 import {memo, useEffect} from "react";
 import ShoppingView from "../components/shoppingMart/shoppingView";
 import { useDispatch, useSelector } from "react-redux";
-import { getProductsDataTypeAction } from "../middleware/shoppingView/shoppingViewActionCreator";
+import { getProductsDataTypeAction, selectProductOptionDetails } from "../middleware/shoppingView/shoppingViewActionCreator";
 import { selectShoppingViewProps } from "../middleware/shoppingView/shoppingViewSelector";
+
 
 
 const ShoppingViewConnect=()=>{
@@ -16,12 +17,24 @@ useEffect(()=>{
 const getProductData=()=>{
     return  dispatch(getProductsDataTypeAction())
 }
-const {productDetails}=useSelector(selectShoppingViewProps);
+const {productDetails, selectedProductOptionDetails}=useSelector(selectShoppingViewProps);
 
 console.log(productDetails)
 
+const handleProductOption=(selectedOption)=>{
+   
+ productDetails?.map((item)=>item?.name===selectedOption ? dispatch(selectProductOptionDetails(item?.productDetails)):'');
 
-        return <ShoppingView productDetails={productDetails}/>
+
+}
+const shoppingProps={
+    handleProductOption,
+    productDetails, 
+    selectedProductOptionDetails
+}
+
+
+        return <ShoppingView {...shoppingProps}/>
       
     }
     

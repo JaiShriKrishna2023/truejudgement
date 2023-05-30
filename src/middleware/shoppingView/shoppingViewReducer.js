@@ -1,6 +1,7 @@
-import {SET_PRODUCTS_DETAIL} from './shoppingViewActionTypes';
+import {SELECT_PRODUCT_OPTION_DETAILS, SET_PRODUCTS_DETAIL} from './shoppingViewActionTypes';
 const shoppingViewInitialState={
-   productDetails:''
+   productDetails:'',
+   selectedProductOptionDetails:''
   
 }
 const shoppingViewReducer=(state=shoppingViewInitialState, action)=>{
@@ -9,9 +10,16 @@ const shoppingViewReducer=(state=shoppingViewInitialState, action)=>{
             return{
                 ...state,
                 productDetails:action?.data
-               
                 
             };
+            case SELECT_PRODUCT_OPTION_DETAILS:
+                return{
+                    ...state,
+                    selectedProductOptionDetails:action?.data
+                    
+                };
+
+            
              
             
             default:{

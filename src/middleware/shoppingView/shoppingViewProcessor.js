@@ -25,12 +25,20 @@ console.log('some api error');
 }
 
 export function* setShoppingCartDataProcessor(data){
-
   console.log('setShoppingCartDataProcessor', data);
 if(data.length > 0){
   yield put(setProductsDataTypeAction(data));
   yield put(setViewScreenTypeAction(RIGHT_PANEL_VIEW_SCREENS.SHOPPING_VIEW));
   
 }
+
+ }
+
+ export function* selectedProductDetailProcessor(data){
+  console.log('selectedProductDetailProcessor', data);
+
+  yield put(setViewScreenTypeAction(RIGHT_PANEL_VIEW_SCREENS.SHOPPING_VIEW));
+  
+
 
  }

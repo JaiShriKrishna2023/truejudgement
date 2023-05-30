@@ -5,10 +5,12 @@ export const shoppingViewPanelDomain=state=> state.shoppingViewReducer || shoppi
 
 export const selectShoppingViewProps=createSelector(
     shoppingViewPanelDomain,({
-        productDetails
+        productDetails,
+        selectedProductOptionDetails
 
     })=>({
-        productDetails
+        productDetails,
+        selectedProductOptionDetails
     })
 
 )
