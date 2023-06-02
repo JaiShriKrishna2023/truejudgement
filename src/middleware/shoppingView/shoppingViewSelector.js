@@ -6,11 +6,17 @@ export const shoppingViewPanelDomain=state=> state.shoppingViewReducer || shoppi
 export const selectShoppingViewProps=createSelector(
     shoppingViewPanelDomain,({
         productDetails,
-        selectedProductOptionDetails
+        selectedProductOptionDetails,
+        productOptionView,
+        purchaseViewData,
+        purchaseView
 
     })=>({
         productDetails,
-        selectedProductOptionDetails
+        selectedProductOptionDetails,
+        productOptionView,
+        purchaseViewData,
+        purchaseView
     })
 
 )

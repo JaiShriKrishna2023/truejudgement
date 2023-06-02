@@ -1,4 +1,4 @@
-import {GET_PRODUCTS_DATA, SET_PRODUCTS_DETAIL, GET_SELECTED_PRODUCTS_OPTIONS, SELECT_PRODUCT_OPTION_DETAILS} from "./shoppingViewActionTypes";
+import {GET_PRODUCTS_DATA, SET_PRODUCTS_DETAIL, GET_SELECTED_PRODUCTS_OPTIONS, SELECT_PRODUCT_OPTION_DETAILS, DISPLAY_PURCHASE_VIEW} from "./shoppingViewActionTypes";
 
 export const getProductsDataTypeAction=(data)=>({
     type:GET_PRODUCTS_DATA,
@@ -23,6 +23,12 @@ export const selectProductOptionDetails=(data)=>({
     data
 
 });
+export const displayPurchaseView=(data)=>({
+    type:DISPLAY_PURCHASE_VIEW,
+    data
+
+});
+
 
 
 

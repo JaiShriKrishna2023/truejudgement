@@ -36,7 +36,7 @@ const GridContainer=styled.div`
   font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
   margin: 10px 0px;
-  text-align: center;
+  text-align: ${props => props.alignment};
   font-weight: bold;
   color: #672;
   font-size: 2rem;

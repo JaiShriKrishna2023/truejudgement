@@ -10,3 +10,8 @@ body {
   background-color: #0c82c4;
   color: white !important;
 }
+
+button:focus,
+input:focus {
+  outline:0;
+}
