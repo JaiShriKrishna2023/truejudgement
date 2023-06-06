@@ -1,0 +1,53 @@
+{
+    "products": [
+      {
+        "name": "couple dresses",
+        "imagePath": "https://m.media-amazon.com/images/I/81piiM69+NL._UL1500_.jpg",
+        "productDetails": [
+          {
+            "articleId": "001",
+            "articleName": "haldiwear",
+            "imagePath": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQLxyFAXlJKxr3Caso_Ro1s0f7qUPKudkJaDeD6Us2XEoXnJnrs8SimjEhhxGxv-H-tAXMnaqzJyZ13UmVH3nEPX_YhKGUVFgvRggdQsoA&usqp=CAE"
+          },
+   {
+            "articleId": "001",
+            "articleName": "ring Ceremony",
+            "imagePath": "https://www.beyoung.in/blog/wp-content/uploads/2023/01/Heart-Melting-Colors.jpg"
+          }
+        ]
+      },
+      {
+        "name": "hum2hamaare2",
+        "imagePath": "https://www.yosainstyle.com/wp-content/uploads/2021/07/6-2.jpg",
+        "productDetails": [
+          {
+            "articleId": "002",
+            "articleName": "haldiwear",
+            "imagePath": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQLxyFAXlJKxr3Caso_Ro1s0f7qUPKudkJaDeD6Us2XEoXnJnrs8SimjEhhxGxv-H-tAXMnaqzJyZ13UmVH3nEPX_YhKGUVFgvRggdQsoA&usqp=CAE"
+          }
+        ]
+      },
+      {
+        "name": "Father's Day",
+        "imagePath": "https://www.pinkblueindia.com/blog/wp-content/uploads/2019/05/fathers-day-baby-clothes-gift.jpg",
+        "productDetails": [
+          {
+            "articleId": "003",
+            "articleName": "haldiwear",
+            "imagePath": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQLxyFAXlJKxr3Caso_Ro1s0f7qUPKudkJaDeD6Us2XEoXnJnrs8SimjEhhxGxv-H-tAXMnaqzJyZ13UmVH3nEPX_YhKGUVFgvRggdQsoA&usqp=CAE"
+          }
+        ]
+      },
+      {
+        "name": "Mother's Day",
+        "imagePath": "https://cdn.shopify.com/s/files/1/1867/0531/products/1stMothersDayPinkTutu-6_580x.jpg?v=1525288553",
+        "productDetails": [
+          {
+            "articleId": "004",
+            "articleName": "haldiwear",
+            "imagePath": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQLxyFAXlJKxr3Caso_Ro1s0f7qUPKudkJaDeD6Us2XEoXnJnrs8SimjEhhxGxv-H-tAXMnaqzJyZ13UmVH3nEPX_YhKGUVFgvRggdQsoA&usqp=CAE"
+          }
+        ]
+      }
+    ]
+  }

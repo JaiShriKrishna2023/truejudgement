@@ -10,7 +10,7 @@ const ProductsCategory=(props)=>{
 
 return( <CardWrapper>
         {props?.productOptions && props?.productOptions.map((description, index)=>
-        <Card clasName={'dfbhjsdbf'} key={index} title={description?.name} imgPath={description?.imagePath} onClick={props?.onClick}/>)}
+        <Card clasName={'dfbhjsdbf'} key={index} title={description?.name} imgPath={description?.imagePath ? description?.imagePath:'./assets/images/anika.png'} onClick={props?.onClick}/>)}
 </CardWrapper>
   
 )

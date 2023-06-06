@@ -9,14 +9,16 @@ export const selectShoppingViewProps=createSelector(
         selectedProductOptionDetails,
         productOptionView,
         purchaseViewData,
-        purchaseView
+        purchaseView,
+        selectedQuantity
 
     })=>({
         productDetails,
         selectedProductOptionDetails,
         productOptionView,
         purchaseViewData,
-        purchaseView
+        purchaseView,
+        selectedQuantity
     })
 
 )

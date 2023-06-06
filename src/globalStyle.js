@@ -86,6 +86,41 @@ const ClearFix=styled.div`{
 
 }`;
 
+const Button = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #f0f0f0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+`;
+
+const PriceContainer = styled.div`
+  display: inline-block;
+  font-size: 16px;
+`;
+
+const CurrencySymbol = styled.span`
+  font-weight: bold;
+  margin-right: 4px;
+`;
+
+const PriceValue = styled.span`
+  color: #333;
+`;
+
   
 
-  export {Row,Acnhor, GridContainer, GridItem, GlobalHeading, Image, ImageContainer, Description, ClearFix}
+  export {
+    Row,Acnhor, GridContainer, GridItem, 
+    GlobalHeading, Image, ImageContainer, Description, 
+    ClearFix, Button,
+    PriceContainer,
+    CurrencySymbol,
+    PriceValue
+  }

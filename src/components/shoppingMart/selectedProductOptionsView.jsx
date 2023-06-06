@@ -10,9 +10,15 @@ const SelectedProductOptionView=(props)=>{
 
 return(
     <Fragment>
-        {props?.purchaseView ? <PurchaseView purchaseViewData={props?.purchaseViewData}/>: <CardWrapper>
+        {props?.purchaseView  && props?.selectedProductOptionDetails.length >0
+? <PurchaseView purchaseViewData={props?.purchaseViewData} {...props}/>: <CardWrapper>
         {props && Object.values(props).map((item, index)=>
-        <Card key={index} title={item?.articleName} imgPath={item?.imagePath} onClick={()=>props?.handlePurchase(data={articleName:data.article=item?.articleName,imagePath:data.image=item?.imagePath})}/>)}
+        <Card key={index} title={item?.articleName} imgPath={item?.imagePath} onClick={()=>props?.handlePurchase(data={articleName:data.article=item?.articleName,
+        imagePath:data.image=item?.imagePath,
+        price:data.price=item?.price,
+        colors:data.colors=item?.colorCode
+
+        })}/>)}
 </CardWrapper>}
 
 

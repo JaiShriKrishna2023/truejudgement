@@ -1,10 +1,11 @@
-import {DISPLAY_PURCHASE_VIEW, SELECT_PRODUCT_OPTION_DETAILS, SET_PRODUCTS_DETAIL} from './shoppingViewActionTypes';
+import {DISPLAY_PURCHASE_VIEW, SELECT_PRODUCT_OPTION_DETAILS, SET_PRODUCTS_DETAIL, SET_SELECTED_QUANTITY} from './shoppingViewActionTypes';
 const shoppingViewInitialState={
    productDetails:'',
    selectedProductOptionDetails:'',
    productOptionView:false,
    purchaseView:false,
-   purchaseViewData:''
+   purchaseViewData:'',
+   selectedQuantity:1
   
 }
 const shoppingViewReducer=(state=shoppingViewInitialState, action)=>{
@@ -32,6 +33,13 @@ const shoppingViewReducer=(state=shoppingViewInitialState, action)=>{
                     purchaseViewData:action?.data,
                     
                 };
+                case SET_SELECTED_QUANTITY:
+                return{
+                    ...state,
+                    selectedQuantity:action?.data
+                    
+                };
+                
 
                 
             

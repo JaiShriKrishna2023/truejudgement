@@ -3,14 +3,14 @@ import {  ImageContainer} from '../../globalStyle';
 import { CardWrapper } from '../common-components/cards/card.style';
 import Card from '../common-components/cards/cards';
 import SelectedProductOptionView from './selectedProductOptionsView';
-import PurchaseView from './purchaseView';
+
 
 const ShoppingView=(props)=>{
     console.log('shoppingView', props);
 
 return(
  <Fragment>
-        {props?.selectedProductOptionDetails.length > 0 && props?.productOptionView ?  <SelectedProductOptionView {...props?.selectedProductOptionDetails
+        {props?.selectedProductOptionDetails.length > 0 && props?.productOptionView ? <SelectedProductOptionView {...props?.selectedProductOptionDetails
 } handlePurchase={props?.handlePurchase} {...props}/>:<Fragment><CardWrapper>
         {props?.productDetails && props?.productDetails?.map((item, index)=>
         <Card key={index} title={item?.name} imgPath={item?.imagePath} onClick={()=>props?.handleProductOption(item?.name)}/>)}

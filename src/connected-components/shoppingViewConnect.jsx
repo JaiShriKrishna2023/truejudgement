@@ -1,12 +1,14 @@
-import {memo, useEffect} from "react";
+import {memo, useEffect, useState} from "react";
 import ShoppingView from "../components/shoppingMart/shoppingView";
 import { useDispatch, useSelector } from "react-redux";
-import { displayPurchaseView, getProductsDataTypeAction, selectProductOptionDetails } from "../middleware/shoppingView/shoppingViewActionCreator";
+import { displayPurchaseView, getProductsDataTypeAction, selectProductOptionDetails, setQuantitySelection } from "../middleware/shoppingView/shoppingViewActionCreator";
 import { selectShoppingViewProps } from "../middleware/shoppingView/shoppingViewSelector";
 
 
 
 const ShoppingViewConnect=()=>{
+    const [quantity, setQuantity] = useState(1);
+   
 
 const dispatch=useDispatch();
 
@@ -18,19 +20,36 @@ const getProductData=()=>{
     return  dispatch(getProductsDataTypeAction())
 }
 const {productDetails, selectedProductOptionDetails,
-     productOptionView, purchaseViewData, purchaseView}=useSelector(selectShoppingViewProps);
+     productOptionView, purchaseViewData, purchaseView, selectedQuantity}=useSelector(selectShoppingViewProps);
 
 console.log(productDetails)
 
 const handleProductOption=(selectedOption)=>{
+    console.log('+++++', selectedOption);
+    
  productDetails?.map((item)=>item?.name===selectedOption ? dispatch(selectProductOptionDetails(item?.productDetails)):'');
 }
 const handlePurchase=(itemSelection)=>{
 console.log(itemSelection);
-
 dispatch(displayPurchaseView(itemSelection))
 }
+const handleIncrease = () => {
+    selectedProductOptionDetails?.map((item)=>
 
+    item?.quantity > quantity ? setQuantity(quantity + 1):void(''));
+    dispatch(setQuantitySelection(quantity));
+   
+    
+  };
+
+  const handleDecrease = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+  const handleColorSelect=()=>{
+    
+  }
 
 const shoppingProps={
     handleProductOption,
@@ -39,7 +58,13 @@ const shoppingProps={
     selectedProductOptionDetails,
     productOptionView,
     purchaseView,
-    purchaseViewData
+    purchaseViewData,
+    quantity:quantity || selectedQuantity,
+    onIncrease:handleIncrease,
+    onDecrease:handleDecrease,
+    onSelect:handleColorSelect
+    
+ 
 }
 
 
