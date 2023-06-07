@@ -30,8 +30,7 @@ const shoppingViewReducer=(state=shoppingViewInitialState, action)=>{
                 return{
                     ...state,
                     purchaseView:true,
-                    purchaseViewData:action?.data,
-                    
+                    purchaseViewData:action?.data
                 };
                 case SET_SELECTED_QUANTITY:
                 return{

@@ -14,11 +14,8 @@ return(
 } handlePurchase={props?.handlePurchase} {...props}/>:<Fragment><CardWrapper>
         {props?.productDetails && props?.productDetails?.map((item, index)=>
         <Card key={index} title={item?.name} imgPath={item?.imagePath} onClick={()=>props?.handleProductOption(item?.name)}/>)}
-
-        
 </CardWrapper>
-      <p>Please make payment here</p>
-  <ImageContainer width={'200px'} height={'auto'} src={'./assets/images/qrCode.png'}/></Fragment>}
+</Fragment>}
 
   </Fragment>
    

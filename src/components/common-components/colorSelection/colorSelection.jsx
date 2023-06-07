@@ -28,7 +28,7 @@ const ColorSelection = ({ colors, onSelect }) => {
 
   return (
     <ColorSelectorContainer>
-      {colors.map((color, index) => (
+      {colors?.map((color, index) => (
         <ColorOption
           key={index}
           color={color}
