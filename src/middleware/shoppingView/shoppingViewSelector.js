@@ -10,7 +10,8 @@ export const selectShoppingViewProps=createSelector(
         productOptionView,
         purchaseViewData,
         purchaseView,
-        selectedQuantity
+        selectedQuantity,
+        selectedPurchaseItem
 
     })=>({
         productDetails,
@@ -18,7 +19,8 @@ export const selectShoppingViewProps=createSelector(
         productOptionView,
         purchaseViewData,
         purchaseView,
-        selectedQuantity
+        selectedQuantity,
+        selectedPurchaseItem
     })
 
 )

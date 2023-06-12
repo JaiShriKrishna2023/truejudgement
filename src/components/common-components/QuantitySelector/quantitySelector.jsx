@@ -10,9 +10,9 @@ const QuantitySelection = ({ onDecrease, onIncrease , quantity}) => {
   return (
     <Fragment>
     <QuantitySelector>
-    <Button onClick={()=>onDecrease()}>-</Button>
+    <Button onClick={onDecrease}>-</Button>
     <QuantityDisplay>{quantity}</QuantityDisplay>
-    <Button onClick={()=>onIncrease()}>+</Button>
+    <Button onClick={onIncrease}>+</Button>
     </QuantitySelector>
      <QuantityDisplay/>
      </Fragment>

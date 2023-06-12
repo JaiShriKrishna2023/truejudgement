@@ -1,24 +1,23 @@
 import styled from 'styled-components';
 
-const Row=styled.div`
-&.row::after{
-  content: "";
-  clear: both;
-  display: table;
-
-}
-
+const GridContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
 
-const GridContainer=styled.div` 
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    margin-top: 0%;
-    margin-left: 0%;
-    background-color: rgb(15 155 197 / 28%);
-  `;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const Column = styled.div`
+  flex: 1;
+  padding: 10px;
+`;
 
   const GridItem=styled.div` 
   background-color: rgba(255, 255, 255, 0.8);
@@ -114,6 +113,10 @@ const PriceValue = styled.span`
   color: #333;
 `;
 
+
+
+
+
   
 
   export {
@@ -122,5 +125,6 @@ const PriceValue = styled.span`
     ClearFix, Button,
     PriceContainer,
     CurrencySymbol,
-    PriceValue
+    PriceValue,
+    Column
   }

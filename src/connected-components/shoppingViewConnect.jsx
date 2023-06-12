@@ -1,4 +1,4 @@
-import {memo, useEffect, useState} from "react";
+import {memo, useCallback, useEffect, useRef, useState} from "react";
 import ShoppingView from "../components/shoppingMart/shoppingView";
 import { useDispatch, useSelector } from "react-redux";
 import { displayPurchaseView, getProductsDataTypeAction, selectProductOptionDetails, setQuantitySelection } from "../middleware/shoppingView/shoppingViewActionCreator";
@@ -7,7 +7,11 @@ import { selectShoppingViewProps } from "../middleware/shoppingView/shoppingView
 
 
 const ShoppingViewConnect=()=>{
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(0);
+    const[itemCount, updateCount]=useState(0);
+
+
+    let purchaseViewDataDetails={};
    
 
 const dispatch=useDispatch();
@@ -19,29 +23,49 @@ useEffect(()=>{
 const getProductData=()=>{
     return  dispatch(getProductsDataTypeAction())
 }
-const {productDetails, selectedProductOptionDetails,
-     productOptionView, purchaseViewData, purchaseView, selectedQuantity}=useSelector(selectShoppingViewProps);
 
-console.log(productDetails)
+const {productDetails, selectedProductOptionDetails, productOptionView, 
+  purchaseViewData, purchaseView, selectedQuantity,selectedPurchaseItem}=useSelector(selectShoppingViewProps);
+
 
 const handleProductOption=(selectedOption)=>{
     console.log('+++++', selectedOption);
-    
  productDetails?.map((item)=>item?.name===selectedOption ? dispatch(selectProductOptionDetails(item?.productDetails)):'');
+//  setDetails(selectedProductOptionDetails.length > 0 && selectedProductOptionDetails?.map((item)=>item?.articleName===purchaseViewData?.articleName ? item?.subProducts:''));
+ 
 }
 const handlePurchase=(itemSelection)=>{
-console.log(itemSelection);
-dispatch(displayPurchaseView(itemSelection))
+console.log('handle purchase ', itemSelection);
+
+ purchaseViewDataDetails = selectedProductOptionDetails.filter(item => {
+  return item?.articleId===itemSelection?.articleId;
+});
+console.log(purchaseViewDataDetails[0]);
+
+// selectedProductOptionDetails?.map((item)=>item?.articleId===itemSelection?.articleId ?
+
+// setDetails(item?.subProducts):setDetails(''));
+const data={
+  purchaseViewDataDetails:purchaseViewDataDetails[0].subProducts,
+  itemSelection:itemSelection
 }
-const handleIncrease = () => {
-    selectedProductOptionDetails?.map((item)=>
+dispatch(displayPurchaseView(data));
 
-    item?.quantity > quantity ? setQuantity(quantity + 1):void(''));
-    dispatch(setQuantitySelection(quantity));
-   
+}
+const handleIncrease = useCallback((event)=>{
+  console.log(event?.currentTarget);
+  event.currentTarget.className = "activeBtn";
+  
+  if(event?.currentTarget?.className==='activeBtn'){
+    setQuantity(quantity + 1);
+  }
+  
+},[]);
+ 
+    // selectedProductOptionDetails?.map((item)=>
+
+    // item?.quantity > quantity ? setQuantity(quantity + 1):void(''));
     
-  };
-
   const handleDecrease = () => {
     if (quantity > 1) {
       setQuantity(quantity - 1);
@@ -50,6 +74,18 @@ const handleIncrease = () => {
   const handleColorSelect=()=>{
     
   }
+  let ElementRef = useRef(null);
+  const handleAddToCart=()=>{
+    console.log('add to cart');
+    let Elementcount = ElementRef.current.childNodes.length
+        console.log(Elementcount);
+  }
+  const handleCartClick = () => {
+    console.log('cart click');
+    // Logic for handling cart icon click
+  };
+
+  
 
 const shoppingProps={
     handleProductOption,
@@ -59,10 +95,16 @@ const shoppingProps={
     productOptionView,
     purchaseView,
     purchaseViewData,
-    quantity:quantity || selectedQuantity,
+    quantity:quantity,
     onIncrease:handleIncrease,
     onDecrease:handleDecrease,
-    onSelect:handleColorSelect
+    onSelect:handleColorSelect,
+    purchaseViewDataDetails:purchaseViewDataDetails,
+    handleAddToCart,
+    handleCartClick,
+    itemCount,
+    ElementRef,
+    selectedPurchaseItem
     
  
 }

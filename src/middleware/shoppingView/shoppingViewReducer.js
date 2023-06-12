@@ -5,7 +5,8 @@ const shoppingViewInitialState={
    productOptionView:false,
    purchaseView:false,
    purchaseViewData:'',
-   selectedQuantity:1
+   selectedQuantity:1,
+   selectedPurchaseItem:''
   
 }
 const shoppingViewReducer=(state=shoppingViewInitialState, action)=>{
@@ -30,7 +31,8 @@ const shoppingViewReducer=(state=shoppingViewInitialState, action)=>{
                 return{
                     ...state,
                     purchaseView:true,
-                    purchaseViewData:action?.data
+                    purchaseViewData:action?.data?.purchaseViewDataDetails,
+                    selectedPurchaseItem:action?.data?.itemSelection?.articleName
                 };
                 case SET_SELECTED_QUANTITY:
                 return{

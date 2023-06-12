@@ -18,6 +18,13 @@ const QuantityDisplay = styled.span`
   font-size: 14px;
   color: #333;
 `;
+const Wrapper=styled.div`
+
+`;
+const PurchaseWrapper=styled.div`
+
+`;
+
  
 
-  export {QuantitySelector, QuantityDisplay}
+  export {QuantitySelector, QuantityDisplay, Wrapper, PurchaseWrapper}

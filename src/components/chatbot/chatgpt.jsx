@@ -1,58 +1,66 @@
 import React, { useState } from 'react';
 
-const ChatGPT = () => {
+const Chatbot = () => {
   const [messages, setMessages] = useState([]);
-  const [inputText, setInputText] = useState('');
+  const [inputValue, setInputValue] = useState('');
 
-  const handleMessageSend = () => {
-    if (inputText.trim() === '') {
-      return;
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  const handleSendMessage = () => {
+    if (inputValue.trim() !== '') {
+      const newMessage = {
+        text: inputValue,
+        sender: 'user'
+      };
+
+      setMessages([...messages, newMessage]);
+      setInputValue('');
+
+      // Call the API or perform the necessary logic to generate a response from the chatbot
+      const botResponse = generateBotResponse(inputValue);
+      const botMessage = {
+        text: botResponse,
+        sender: 'bot'
+      };
+      setTimeout(() => {
+        setMessages([...messages, botMessage]);
+      }, 1000); // Simulate a delay before receiving the bot response
     }
+  };
 
-    // Add user message to the chat
-    setMessages([...messages, { text: inputText, sender: 'user' }]);
-    setInputText('');
+  const generateBotResponse = (userInput) => {
+    // Implement your chatbot logic here to generate the appropriate response based on the user input
+    // You can use if statements, switch statements, or any other technique to handle different user inputs
 
-    // Send user message to ChatGPT and get response
-    // Replace the `YOUR_API_ENDPOINT` with the actual endpoint URL of your ChatGPT API
-    fetch('YOUR_API_ENDPOINT', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ message: inputText }),
-    })
-      .then(response => response.json())
-      .then(data => {
-        // Add ChatGPT's response to the chat
-        setMessages([...messages, { text: data.message, sender: 'bot' }]);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
+    // For demonstration purposes, let's echo back the user's input
+    return `You said: ${userInput}`;
   };
 
   return (
-    <div>
-      <div>
+    <div className="chatbot">
+      <div className="chatbot-messages">
         {messages.map((message, index) => (
-          <div key={index}>
-            {message.sender === 'user' ? (
-              <div>User: {message.text}</div>
-            ) : (
-              <div>Bot: {message.text}</div>
-            )}
+          <div
+            key={index}
+            className={`message ${message.sender === 'bot' ? 'bot' : 'user'}`}
+          >
+            {message.text}
           </div>
         ))}
       </div>
-      <input
-        type="text"
-        value={inputText}
-        onChange={e => setInputText(e.target.value)}
-      />
-      <button onClick={handleMessageSend}>Send</button>
+      <div className="chatbot-input">
+        <input
+          type="text"
+          value={inputValue}
+          onChange={handleInputChange}
+          placeholder="Type your message..."
+        />
+        <button onClick={handleSendMessage}>Send</button>
+      </div>
     </div>
   );
 };
 
-export default ChatGPT;
+export default Chatbot;
