@@ -35,14 +35,18 @@ return(
    <AddToCart onClick={props?.handleAddToCart} align={'right'} />
   {props?.purchaseViewData.length > 0 && props?.purchaseViewData?.map((item, index)=>
     <Fragment>
+        <GridContainer>
+    <Row>
+    <Column>
        <Wrapper data-id={`wrapper-${index+1}`} data-quantity={item?.quantity}  ref={props?.ElementRef}>
         <CardWrapper>
           <Card title={item?.articleName} imgPath={item?.imagePath} onClick={()=>void('')}/>
       </CardWrapper>
 <PriceComponent currency="INR" value={item?.price} />
-<QuantitySelection quantity={props?.quantity} onIncrease={props?.onIncrease} onDecrease={props?.onDecrease}/>
+<QuantitySelection quantity={props?.quantity} totalQty={item?.quantity} onIncrease={props?.onIncrease} onDecrease={props?.onDecrease}/>
 <ColorSelection colors={item?.colorCode} onSelect={props?.handleColorSelect} />
  </Wrapper>
+ </Column></Row></GridContainer>
  </Fragment>
  )}
 </PurchaseWrapper> 

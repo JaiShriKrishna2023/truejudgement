@@ -8,6 +8,7 @@ const RightPanelView = (props) => {
  return(
  <RightPanelContainer id={'rightpanel'} className={'content'}>
    <PageTitle>{props?.selectedProduct}</PageTitle>
+   
   <Viewrouterconnect/>
     </RightPanelContainer>)
 }

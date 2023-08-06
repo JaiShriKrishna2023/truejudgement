@@ -6,12 +6,12 @@ import { QuantityDisplay, QuantitySelector } from '../../shoppingMart/shoppingCa
 
 
 
-const QuantitySelection = ({ onDecrease, onIncrease , quantity}) => {
+const QuantitySelection = ({ onDecrease, onIncrease , quantity, totalQty}) => {
   return (
     <Fragment>
     <QuantitySelector>
     <Button onClick={onDecrease}>-</Button>
-    <QuantityDisplay>{quantity}</QuantityDisplay>
+    <QuantityDisplay totalQty={totalQty}>{quantity}</QuantityDisplay>
     <Button onClick={onIncrease}>+</Button>
     </QuantitySelector>
      <QuantityDisplay/>

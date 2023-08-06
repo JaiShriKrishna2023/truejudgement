@@ -9,7 +9,7 @@ const Layout=()=>{
 
 
     return(
-    
+
       <AppInitializationConnect apiData={data} companyName={'lowes'}/>
   )
 

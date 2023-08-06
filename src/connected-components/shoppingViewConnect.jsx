@@ -9,9 +9,8 @@ import { selectShoppingViewProps } from "../middleware/shoppingView/shoppingView
 const ShoppingViewConnect=()=>{
     const [quantity, setQuantity] = useState(0);
     const[itemCount, updateCount]=useState(0);
-
-
     let purchaseViewDataDetails={};
+   
    
 
 const dispatch=useDispatch();
@@ -31,41 +30,27 @@ const {productDetails, selectedProductOptionDetails, productOptionView,
 const handleProductOption=(selectedOption)=>{
     console.log('+++++', selectedOption);
  productDetails?.map((item)=>item?.name===selectedOption ? dispatch(selectProductOptionDetails(item?.productDetails)):'');
-//  setDetails(selectedProductOptionDetails.length > 0 && selectedProductOptionDetails?.map((item)=>item?.articleName===purchaseViewData?.articleName ? item?.subProducts:''));
- 
+
 }
 const handlePurchase=(itemSelection)=>{
-console.log('handle purchase ', itemSelection);
-
  purchaseViewDataDetails = selectedProductOptionDetails.filter(item => {
   return item?.articleId===itemSelection?.articleId;
 });
-console.log(purchaseViewDataDetails[0]);
-
-// selectedProductOptionDetails?.map((item)=>item?.articleId===itemSelection?.articleId ?
-
-// setDetails(item?.subProducts):setDetails(''));
 const data={
   purchaseViewDataDetails:purchaseViewDataDetails[0].subProducts,
   itemSelection:itemSelection
 }
 dispatch(displayPurchaseView(data));
-
 }
-const handleIncrease = useCallback((event)=>{
-  console.log(event?.currentTarget);
-  event.currentTarget.className = "activeBtn";
-  
-  if(event?.currentTarget?.className==='activeBtn'){
-    setQuantity(quantity + 1);
-  }
-  
-},[]);
- 
-    // selectedProductOptionDetails?.map((item)=>
 
-    // item?.quantity > quantity ? setQuantity(quantity + 1):void(''));
-    
+const handleIncrease = (event)=>{
+  console.log(event?.currentTarget);
+ console.log(purchaseViewData);
+  setQuantity(quantity + 1);
+ 
+  
+};
+ 
   const handleDecrease = () => {
     if (quantity > 1) {
       setQuantity(quantity - 1);
